@@ -1,0 +1,29 @@
+{
+  "name": "game-of-war",
+  "version": "0.1.0",
+  "description": "Simulation of the card (game) of war",
+  "private": false,
+  "author": "Jim Canright",
+  "license": "MIT",
+  "main": "war.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/canright/gameofwar.git"
+  },
+  "keywords": [
+    "oop",
+    "node",
+    "es6/2015"
+  ],
+  "scripts": {
+    "start": "node war",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
