@@ -83,6 +83,12 @@ http://localhost:3000/gameofwar.html?players=2&suits=4&ranks=6  -- 2 players wit
 
 The Web Mode UI is extremely primitive and unsophisticated.  It, basically just responds with a console-like log.  A next step might be to produce a proper web page with compelling look and feel instead of the current admittedly ugly presentation.
 
+### Demonstration
+
+To run the game now in web mode:
+
+http://canright.net/gameofwar.html
+
 ## Installation
 
 ## Testing
@@ -117,23 +123,3 @@ Jim Canright
 jim@canright.net
 
 ## MIT License
-
-
-
-
-
-/* Each active player reveals top card from their hand.
- * Cards are compared and the player showing the card with the highest rank wins the trick.
- * If more than one player show cards with the winning rank, then they are at war.
- * Eech player at war pulls two cards from their hand and shows the second one.
- * Again, the player showing the card with the hightest rank wins the trick.
- * If more than one player again show cards with the winning rank, they war again until a single winner emerges.
- * The winning player adds all cards involved in the trick to the bottom of their hand.
- * Future: The ordering of the cards added to the hand is not carefully considered here.
- * (provate) property hands is a reference to the hands from the game.  Each trick mutates the hands received.
- * (private) property kitty accumulates the cards involved in the trick to be rewarded to the winner of the trick.
- * (private) property faces isolates the card shown for each hand.
- * (private) property wins array of winners (indices to hands).  Trick is done when wins.length = 1.
-
- hello
-*/
